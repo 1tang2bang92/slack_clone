@@ -12,18 +12,18 @@ function App() {
   return (
     <ApplicationContainer>
       {isOptionPage ? (
+        <Optoins />
+      ) : (
         <>
           <SideMenu />
           <Workspace />
           <FloatButton onClick={() => setOptionPage(true)} />
         </>
-      ) : (
-        <Optoins />
       )}
-      <Resizable>
+      {/* <Resizable>
         <div>1</div>
         <div>2</div>
-      </Resizable>
+      </Resizable> */}
     </ApplicationContainer>
   )
 }
@@ -32,6 +32,7 @@ export default App
 
 const ApplicationContainer = styled.div`
   display: flex;
+  flex-direction: row;
   width: 100%;
   height: 100%;
 `
