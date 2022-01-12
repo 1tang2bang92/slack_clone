@@ -11,7 +11,7 @@ ReactDOM.render(
       }
       body {
         margin: 0px;
-        padding: 8px;
+        padding: 0px;
       }
       html, body, #root {
         width: 100%;
